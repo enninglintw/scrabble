@@ -12,6 +12,8 @@ class Scrabble
   end
 
   def score(text)
+    return 0 if text == nil
+
     letters = text.upcase.split("")
     return letters.inject(0) { |sum, letter| sum + letter_vs_value[letter] }
   end

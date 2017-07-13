@@ -1,4 +1,5 @@
 require "minitest/autorun"
+require_relative "scrabble"
 
 class TestScrabble < Minitest::Test
   def setup
